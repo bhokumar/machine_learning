@@ -30,4 +30,7 @@ print(y_test)
 print('Predicted:')
 print(y_pred)
 
+finalData = np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), 1)
+print(finalData)
+
 
