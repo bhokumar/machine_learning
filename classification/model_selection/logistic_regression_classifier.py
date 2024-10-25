@@ -16,11 +16,11 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random
 # print(y_test)
 
 
-# from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler
 
-# sc = StandardScaler()
-# x_train = sc.fit_transform(x_train)
-# x_test = sc.transform(x_test)
+sc = StandardScaler()
+x_train = sc.fit_transform(x_train)
+x_test = sc.transform(x_test)
 
 # print(x_train)
 # print(x_test)
